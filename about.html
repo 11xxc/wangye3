@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 鑫磁科技</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e5e5e5;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .logo img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #0070f3;
+        }
+
+        .hero {
+            height: 400px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1700101135916-J1NvTX09OLsPNwjg31IjFG2zwBBFAi.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .about-section {
+            padding: 60px 0;
+        }
+
+        .company-intro {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: -60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #0070f3;
+            margin-bottom: 15px;
+        }
+
+        .milestones {
+            margin-top: 60px;
+            padding: 40px 0;
+            background: #f5f5f5;
+        }
+
+        .milestone {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .year {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0070f3;
+            margin-right: 20px;
+            min-width: 100px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .milestone {
+                flex-direction: column;
+            }
+
+            .year {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7d1796d873b15a598799efb5bd8be3c.jpg-Fv3r6ZGUYhihVqmxT2v3SSBReCYYDm.jpeg" alt="鑫磁科技 Logo">
+                <span class="logo-text">鑫磁科技</span>
+            </a>
+            <div class="nav-links">
+                <a href="homepage.html">首页</a>
+                <a href="about.html">关于我们</a>
+                <a href="products.html">产品展示</a>
+                <a href="#">服务</a>
+                <a href="#">新闻</a>
+                <a href="#">联系我们</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>关于鑫磁科技</h1>
+                <p>诚铸品牌，德报社会</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="company-intro">
+                    <h2>企业简介</h2>
+                    <p>鑫磁科技有限公司起步于2003年，是一家集磁性材料研发、生产、加工、销售、服务为一体的高科技新材料企业，主要生产各种型号的磁铁、磁片，软磁带材及其延伸产品。产品广泛应用于电子电力、仪器仪表、医疗器械、家用电器，通讯设备、新能源汽车、国家电网、漏保开关、光伏产业等领域。</p>
+                </div>
+
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>研发中心</h3>
+                        <p>公司成立研发中心，技术和管理团队人员，均有数十年以上的行业经验，有丰富的理论和实践经验。研发中心团队积极创新，在设备和产品方面已拥有十多项专利。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>生产能力</h3>
+                        <p>生产适销对路产品，满足社会需要。实现企业经营决策和生产目标的任务。使企业的人力资源和物力资源得到充分最有效的利用。现带材年产可达10000吨、铁芯日产30W只、互感器日产20W只。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>加工设备</h3>
+                        <p>我司拥有国内外生产加工设备3000余台。满足行业内所有非标定制的需求。检测设备100余台，成立有独立实验室，确保每一批物料的精准化。</p>
+                    </div>
+                </div>
+
+                <div class="milestones">
+                    <h2>发展历程</h2>
+                    <div class="milestone">
+                        <div class="year">2003年</div>
+                        <div class="description">
+                            <p>公司成立，开始专注于磁性材料的研发与生产。</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="year">2015年</div>
+                        <div class="description">
+                            <p>以招商引资方式落地于壶关经济开发区，扩大生产规模。</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="year">2021年</div>
+                        <div class="description">
+                            <p>公司规划进一步延伸产业链，开始生产纳米晶铁芯、互感器、电路板、控制器，共模电感铁芯等高端磁材系列产品。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        window.addEventListener('load', function() {
+            const hero = document.querySelector('.hero');
+            const img = new Image();
+            img.src = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1700101135916-J1NvTX09OLsPNwjg31IjFG2zwBBFAi.png';
+            img.crossOrigin = 'anonymous';
+            img.onload = function() {
+                hero.style.backgroundImage = `url('${img.src}')`;
+            };
+            img.onerror = function() {
+                console.error('背景图片加载失败');
+                hero.style.backgroundColor = '#0c4a6e';
+            };
+        });
+    </script>
+</body>
+</html>

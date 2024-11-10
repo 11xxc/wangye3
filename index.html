@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鑫磁科技 - 索引页</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+        }
+        .logo img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+        .logo-text {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        main {
+            padding: 40px 0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .index-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .index-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .index-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .index-item h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #0070f3;
+        }
+        .index-item p {
+            margin: 0;
+            color: #666;
+        }
+        .index-item a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #0070f3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .index-item a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="homepage.html" class="logo">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7d1796d873b15a598799efb5bd8be3c.jpg-Fv3r6ZGUYhihVqmxT2v3SSBReCYYDm.jpeg" alt="鑫磁科技 Logo">
+                <span class="logo-text">鑫磁科技</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>鑫磁科技网站索引</h1>
+        <div class="index-list">
+            <div class="index-item">
+                <h2>首页</h2>
+                <p>了解鑫磁科技的概况和最新动态</p>
+                <a href="homepage.html">访问首页</a>
+            </div>
+            <div class="index-item">
+                <h2>关于我们</h2>
+                <p>探索鑫磁科技的历史、使命和价值观</p>
+                <a href="about.html">了解更多</a>
+            </div>
+            <div class="index-item">
+                <h2>产品展示</h2>
+                <p>浏览我们的磁力产品系列</p>
+                <a href="products.html">查看产品</a>
+            </div>
+            <div class="index-item">
+                <h2>技术创新</h2>
+                <p>了解我们在磁力技术领域的最新突破</p>
+                <a href="#">探索创新</a>
+            </div>
+            <div class="index-item">
+                <h2>应用案例</h2>
+                <p>查看鑫磁科技产品的实际应用案例</p>
+                <a href="#">查看案例</a>
+            </div>
+            <div class="index-item">
+                <h2>新闻中心</h2>
+                <p>获取公司最新新闻和行业动态</p>
+                <a href="#">阅读新闻</a>
+            </div>
+            <div class="index-item">
+                <h2>人才招聘</h2>
+                <p>加入鑫磁科技，成为磁力技术的先驱</p>
+                <a href="#">查看职位</a>
+            </div>
+            <div class="index-item">
+                <h2>联系我们</h2>
+                <p>获取联系方式，了解更多信息</p>
+                <a href="#">联系我们</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 鑫磁科技 版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>
